@@ -27,14 +27,12 @@ const sliders = (slides, dir, prev, next) => {
     function activateAnimation() {
         if (dir == 'vertical') {
             paused = setInterval(function() {
-                console.log('vertical');
                 plusSlides(1);
                 items[slideIndex - 1].classList.add('slideInDown');
             }, 3000);
         }
         else {
             paused = setInterval(function() {
-                console.log('horizontal');
                 plusSlides(1);
                 items[slideIndex - 1].classList.remove('slideInRight');
                 items[slideIndex - 1].classList.add('slideInLeft');
